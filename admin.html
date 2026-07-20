@@ -2,11 +2,27 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>DONA SHOP ADMIN</title>
+<title>DONA SHOP - ADMIN</title>
 </head>
+
 <body>
 
 <h1>DONA SHOP - ADMIN</h1>
+
+<h2>Informations de la boutique</h2>
+
+<p>Logo de la boutique</p>
+<input type="file" id="logo"><br><br>
+
+<p>Photo de couverture</p>
+<input type="file" id="couverture"><br><br>
+
+<p>Couleur principale de la boutique</p>
+<input type="color" id="couleur"><br><br>
+
+<hr>
+
+<h2>Informations du produit</h2>
 
 <p>Photo du produit</p>
 <input type="file" id="photo"><br><br>
@@ -17,13 +33,58 @@
 <p>Nom du produit</p>
 <input type="text" id="nom" placeholder="Nom du produit"><br><br>
 
-<p>Prix en FCFA</p>
-<input type="number" id="prix" placeholder="Prix du produit"><br><br>
+<p>Catégorie du produit</p>
+<input type="text" id="categorie" placeholder="Ex : Casque Bluetooth"><br><br>
+
+<p>Prix du produit</p>
+<input type="number" id="prix" placeholder="Prix en FCFA"><br><br>
+
+<p>Ancien prix (promotion)</p>
+<input type="number" id="ancienprix" placeholder="Ancien prix"><br><br>
 
 <p>Description du produit</p>
-<textarea id="description" placeholder="Description"></textarea><br><br>
+<textarea id="description"
+placeholder="Description du produit"></textarea><br><br>
 
-<butt<button id="publier">PUBLIER LE PRODUIT</button>
+<p>Produit 100 % neuf</p>
+<input type="checkbox" checked> Oui<br><br>
+
+<p>Quantité disponible</p>
+<input type="number" id="stock"
+placeholder="Quantité"><br><br>
+
+<hr>
+
+<h2>Livraison</h2>
+
+<p>Livraison partout en Côte d'Ivoire</p>
+<input type="checkbox" checked> Oui<br><br>
+
+<p>Livraison rapide à Abidjan</p>
+<input type="checkbox" checked> Oui<br><br>
+
+<p>Délai de livraison</p>
+<input type="text"
+placeholder="24 heures"><br><br>
+
+<hr>
+
+<h2>Paiement</h2>
+
+<input type="checkbox" checked> Wave<br>
+<input type="checkbox" checked> Mobile Money<br>
+<input type="checkbox"> Paiement à la livraison<br><br>
+
+<hr>
+
+<h2>WhatsApp</h2>
+
+<input type="text"
+value="0508537634"><br><br>
+
+<button id="publier">
+PUBLIER LE PRODUIT
+</button>
 
 <script src="firebase-config.js"></script>
 <script src="admin.js"></script>
