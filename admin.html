@@ -1,23 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
+<meta charset="UTF-8">
 <title>DONA SHOP ADMIN</title>
 </head>
 <body>
 
-<h1>DONA SHOP</h1>
+<h1>DONA SHOP - ADMIN</h1>
 
+<p>Photo du produit</p>
 <input type="file" id="photo"><br><br>
 
+<p>Vidéo du produit</p>
 <input type="file" id="video"><br><br>
 
+<p>Nom du produit</p>
 <input type="text" id="nom" placeholder="Nom du produit"><br><br>
 
-<input type="number" id="prix" placeholder="Prix en FCFA"><br><br>
+<p>Prix en FCFA</p>
+<input type="number" id="prix" placeholder="Prix du produit"><br><br>
 
-<textarea id="description" placeholder="Description du produit"></textarea><br><br>
+<p>Description du produit</p>
+<textarea id="description" placeholder="Description"></textarea><br><br>
 
-<button>Publier le produit</button>
+<button>PUBLIER LE PRODUIT</button>
+
+<script src="firebase-config.js"></script>
+<script src="admin.js"></script>
 
 </body>
 </html>
