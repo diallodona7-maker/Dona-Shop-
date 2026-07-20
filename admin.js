@@ -1,1 +1,1 @@
-console.log("Panneau d'administration DONA SHOP chargé.");
+console.log("Bienvenue sur DONA SHOP ADMIN !");
