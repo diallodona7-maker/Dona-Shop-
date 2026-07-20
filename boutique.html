@@ -1,54 +1,66 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
 <title>DONA SHOP</title>
 
 <style>
+
 body{
 font-family:Arial,sans-serif;
-background:#f4f4f4;
+background-color:white;
 margin:0;
+padding:0;
+}
+
+header{
+background:black;
+color:white;
+text-align:center;
 padding:20px;
 }
 
-h1{
+.banner{
 text-align:center;
+padding:20px;
+background:#f5f5f5;
 }
 
 .produit{
-background:white;
-padding:15px;
-margin-bottom:20px;
+border:1px solid #ddd;
 border-radius:15px;
-box-shadow:0 0 10px #ccc;
-}
-
-.produit img{
-width:100%;
-border-radius:10px;
-}
-
-.produit video{
-width:100%;
-border-radius:10px;
-margin-top:10px;
+margin:20px;
+padding:20px;
+box-shadow:0 0 10px rgba(0,0,0,0.1);
 }
 
 .prix{
 color:red;
-font-size:24px;
+font-size:28px;
 font-weight:bold;
 }
 
-button{
-width:100%;
+.neuf{
+color:green;
+font-weight:bold;
+}
+
+.livraison{
+background:#f8f8f8;
 padding:15px;
-border:none;
 border-radius:10px;
+margin-top:15px;
+}
+
+.whatsapp{
 background:green;
 color:white;
-font-size:18px;
+padding:15px;
+border-radius:10px;
+text-decoration:none;
+display:inline-block;
+margin-top:15px;
+font-weight:bold;
 }
 
 </style>
@@ -57,69 +69,77 @@ font-size:18px;
 
 <body>
 
+<header>
+
 <h1>DONA SHOP</h1>
+
+<p>Produits 100 % neufs</p>
+
+<p>Livraison partout en Côte d'Ivoire</p>
+
+</header>
+
+<div class="banner">
+
+<h2>Bienvenue chez DONA SHOP</h2>
+
+<p>La technologie à portée de main.</p>
+
+</div>
+
 
 <div class="produit">
 
-<img src="PHOTO-DU-PRODUIT.jpg">
-
-<video controls>
-<source src="VIDEO-DU-PRODUIT.mp4">
-</video>
-
 <h2>Nom du produit</h2>
+
+<p class="neuf">✓ Produit 100 % neuf</p>
 
 <p class="prix">35 000 FCFA</p>
 
 <p>
-Mettez ici la description complète du produit.
+
+Description du produit.
+
 </p>
 
-<p>
-Stock disponible : Oui
-</p>
+<div class="livraison">
 
-<p>
-Promotion : Livraison offerte à Abidjan.
-</p>
+<h3>Livraison</h3>
 
-<a href="https://wa.me/2250508537634">
-<button>COMMANDER SUR WHATSAPP</button>
+<p>✓ Livraison rapide à Abidjan.</p>
+
+<p>✓ Livraison partout en Côte d'Ivoire.</p>
+
+<p>✓ Produit vérifié avant expédition.</p>
+
+</div>
+
+<h3>Paiement</h3>
+
+<p>✓ Wave</p>
+<p>✓ Mobile Money</p>
+<p>✓ Paiement à la livraison (si disponible)</p>
+
+
+<a class="whatsapp"
+href="https://wa.me/2250508537634">
+
+COMMANDER SUR WHATSAPP
+
 </a>
 
 </div>
 
 
+<footer style="text-align:center;padding:20px;">
 
-<div class="produit">
+<h3>DONA SHOP</h3>
 
-<img src="PHOTO2.jpg">
+<p>WhatsApp : 0508537634</p>
 
-<video controls>
-<source src="VIDEO2.mp4">
-</video>
+<p>Merci de votre confiance.</p>
 
-<h2>Nom du deuxième produit</h2>
-
-<p class="prix">17 500 FCFA</p>
-
-<p>
-Description du deuxième produit.
-</p>
-
-<p>
-Stock disponible : Oui
-</p>
-
-<p>
-Promotion : -10 %
-</p>
-
-<a href="https://wa.me/2250508537634">
-<button>COMMANDER SUR WHATSAPP</button>
-</a>
-
-</div>
+</footer>
 
 </body>
 </html>
