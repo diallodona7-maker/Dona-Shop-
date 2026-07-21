@@ -32,3 +32,10 @@ let message =
 alert(message);
 
 });
+document
+.getElementById("publierProduit")
+.addEventListener("click", function () {
+
+alert("Votre produit a été publié avec succès !");
+
+});
