@@ -1,93 +1,157 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>DONA SHOP - ADMIN</title>
-</head>
 
+<link rel="stylesheet" href="style.css">
+
+<style>
+body{
+font-family:Arial,sans-serif;
+background:#f5f5f5;
+margin:0;
+padding:0;
+}
+
+header{
+background:#000;
+color:#fff;
+padding:20px;
+text-align:center;
+}
+
+.container{
+background:#fff;
+max-width:800px;
+margin:20px auto;
+padding:20px;
+border-radius:10px;
+}
+
+h2{
+color:#d40000;
+}
+
+input, textarea{
+width:100%;
+padding:12px;
+margin-top:5px;
+margin-bottom:15px;
+border:1px solid #ccc;
+border-radius:6px;
+box-sizing:border-box;
+}
+
+button{
+width:100%;
+padding:15px;
+background:#d40000;
+color:white;
+border:none;
+border-radius:8px;
+font-size:18px;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{
+background:#aa0000;
+}
+</style>
+
+</head>
 <body>
 
+<header>
 <h1>DONA SHOP - ADMIN</h1>
+</header>
+
+<div class="container">
 
 <h2>Informations de la boutique</h2>
 
-<p>Logo de la boutique</p>
-<input type="file" id="logo"><br><br>
+<label>Logo de la boutique</label>
+<input type="file">
 
-<p>Photo de couverture</p>
-<input type="file" id="couverture"><br><br>
+<label>Photo de couverture</label>
+<input type="file">
 
-<p>Couleur principale de la boutique</p>
-<input type="color" id="couleur"><br><br>
-
-<hr>
+<label>Couleur principale de la boutique</label>
+<input type="color">
 
 <h2>Informations du produit</h2>
 
-<p>Photo du produit</p>
-<input type="file" id="photo"><br><br>
+<label>Photo du produit</label>
+<input type="file">
 
-<p>Vidéo du produit</p>
-<input type="file" id="video"><br><br>
+<label>Vidéo du produit</label>
+<input type="file">
 
-<p>Nom du produit</p>
-<input type="text" id="nom" placeholder="Nom du produit"><br><br>
+<label>Nom du produit</label>
+<input id="nomProduit" type="text" placeholder="Nom du produit">
 
-<p>Catégorie du produit</p>
-<input type="text" id="categorie" placeholder="Ex : Casque Bluetooth"><br><br>
+<label>Catégorie du produit</label>
+<input type="text" placeholder="Ex : Casque Bluetooth">
 
-<p>Prix du produit</p>
-<input type="number" id="prix" placeholder="Prix en FCFA"><br><br>
+<label>Prix du produit</label>
+<input id="prixProduit" type="number" placeholder="Prix en FCFA">
 
-<p>Ancien prix (promotion)</p>
-<input type="number" id="ancienprix" placeholder="Ancien prix"><br><br>
+<label>Ancien prix (promotion)</label>
+<input type="number" placeholder="Ancien prix">
 
-<p>Description du produit</p>
-<textarea id="description"
-placeholder="Description du produit"></textarea><br><br>
+<label>Description du produit</label>
+<textarea rows="4" placeholder="Description du produit"></textarea>
 
-<p>Produit 100 % neuf</p>
-<input type="checkbox" checked> Oui<br><br>
+<label>
+<input type="checkbox" checked>
+Produit 100 % neuf
+</label>
 
-<p>Quantité disponible</p>
-<input type="number" id="stock"
-placeholder="Quantité"><br><br>
+<br><br>
 
-<hr>
+<label>Quantité disponible</label>
+<input type="number" placeholder="Quantité">
 
 <h2>Livraison</h2>
 
-<p>Livraison partout en Côte d'Ivoire</p>
-<input type="checkbox" checked> Oui<br><br>
+<label>
+<input type="checkbox" checked>
+Livraison partout en Côte d'Ivoire
+</label>
 
-<p>Livraison rapide à Abidjan</p>
-<input type="checkbox" checked> Oui<br><br>
+<br><br>
 
-<p>Délai de livraison</p>
-<input type="text"
-placeholder="24 heures"><br><br>
+<label>
+<input type="checkbox" checked>
+Livraison rapide à Abidjan
+</label>
 
-<hr>
+<br><br>
+
+<label>Délai de livraison</label>
+<input type="text" value="24 heures">
 
 <h2>Paiement</h2>
 
-<input type="checkbox" checked> Wave<br>
-<input type="checkbox" checked> Mobile Money<br>
-<input type="checkbox"> Paiement à la livraison<br><br>
-
-<hr>
+<label><input type="checkbox" checked> Wave</label><br>
+<label><input type="checkbox" checked> Mobile Money</label><br>
+<label><input type="checkbox" checked> Paiement à la livraison</label>
 
 <h2>WhatsApp</h2>
 
-<input type="text"
-value="0508537634"><br><br>
+<input type="text" value="0508537634">
 
-<button id="publier">
+<br><br>
+
+<button id="publierProduit">
 PUBLIER LE PRODUIT
 </button>
 
-<script src="firebase-config.js"></script>
+</div>
+
 <script src="admin.js"></script>
 
 </body>
-</html><script src="admin.js"></script>
+</html>
