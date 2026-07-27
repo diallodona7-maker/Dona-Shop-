@@ -1,19 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 <head>
-    <title>BOUTIQUE DONA SHOP</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONA SHOP - Boutique</title>
 </head>
 
 <body>
 
-<header>
-    <h1>BOUTIQUE DONA SHOP</h1>
-</header>
+<h1>DONA SHOP - BOUTIQUE</h1>
 
-<h2 style="text-align:center;">
-Aucun produit disponible pour le moment.
-</h2>
+<div id="produits"></div>
+
+<script>
+
+const produit = JSON.parse(localStorage.getItem("produit"));
+
+if (produit) {
+
+document.getElementById("produits").innerHTML = `
+    <h2>${produit.nom}</h2>
+    <p>Prix : ${produit.prix} FCFA</p>
+`;
+
+} else {
+
+document.getElementById("produits").innerHTML =
+"<p>Aucun produit disponible.</p>";
+
+}
+
+</script>
 
 </body>
 </html>
