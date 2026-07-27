@@ -1,15 +1,15 @@
-document.addEventListener("DOMContentLoaded", ()=>{
+document.getElementById("publierProduit").addEventListener("click", () => {
 
-const bouton=document.getElementById("publierProduit");
+const nom = document.getElementById("nomProduit").value;
+const prix = document.getElementById("prixProduit").value;
 
-if(bouton){
+const produit = {
+    nom: nom,
+    prix: prix
+};
 
-bouton.addEventListener("click",()=>{
+localStorage.setItem("produit", JSON.stringify(produit));
 
 alert("Produit publié avec succès !");
-
-});
-
-}
 
 });
